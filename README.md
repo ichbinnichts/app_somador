@@ -1,5 +1,7 @@
 # app_somador
 
+* API used: https://dummyjson.com/docs/auth
+
 A new Flutter project.
 
 ## Getting Started
