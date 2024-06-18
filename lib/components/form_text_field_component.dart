@@ -26,10 +26,12 @@ class FormTextField extends StatelessWidget {
         obscureText: obscureText ?? false,
         controller: textController,
         decoration: InputDecoration(
-          prefixIcon: iconInput,
-          labelText: label,
-          hintText: hint,
-        ),
+            prefixIcon: iconInput,
+            labelText: label,
+            hintText: hint,
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+            )),
         validator: inputValidator,
       ),
     );
