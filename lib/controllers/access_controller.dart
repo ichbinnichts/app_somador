@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:app_somador/constants/constants.dart';
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AccessController {
   static final AccessController instance = AccessController();
@@ -18,6 +19,8 @@ class AccessController {
           },
         ));
     if (response.statusCode == 200) {
+      final SharedPreferences prefs = await SharedPreferences.getInstance();
+      prefs.setString('username', username);
       return true;
     } else {
       return false;
