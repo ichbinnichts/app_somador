@@ -28,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
             const SizedBox(
               height: 10,
             ),
-            FormTextField(label: 'Email', hint: 'example@email.com'),
+            FormTextField(label: 'Usuário', hint: 'Usuário'),
             FormTextField(label: 'Senha', hint: 'Senha'),
             const SizedBox(
               height: 10,
