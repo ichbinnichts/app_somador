@@ -1,4 +1,5 @@
 import 'package:app_somador/views/login_page.dart';
+import 'package:app_somador/views/somador_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/login',
       routes: {
         '/login': (context) => const LoginPage(),
+        '/somador': (context) => const SomadorPage(),
       },
     );
   }
